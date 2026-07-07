@@ -8,8 +8,8 @@ app.get('/ping', (req, res) => {
     //Endpoint para conferiri se a API ta funcionando
     //comportamento esperado: receber um status 200 com a mensagem 
     //"pong" no corpo da resposta
-    console.log(`Porta: &{port}`);
-    console.log('Algué, acessou o endpoint /ping. ping!');
+    console.log(`Porta: ${port}`);
+    console.log('Alguém, acessou o endpoint /ping. ping!');
     res.status(200).send('Hello World, pong!');
 });
 
