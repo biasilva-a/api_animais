@@ -16,9 +16,8 @@ export const animalService = {
         const animalExistetnte = await animalRepository.findById(id);
         if (!animalExistetnte) {
             throw new Error("Animal não encontrado");
-
-            return await animalRepository.update(id, animalRequisicao);
         }
-    }
+        return await animalRepository.update(id, animalRequisicao);
     
+    }
 }
