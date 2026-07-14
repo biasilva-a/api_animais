@@ -4,6 +4,7 @@ import {animalController}  from '../controllers/animalController.js';
 const router = Router();
 
 router.get('/animals', animalController.getAll);
+router.get('/animals/:id', animalController.get);
 router.post('/animals', animalController.create);
 router.put('/animals/:id', animalController.update);
 router.patch('/animals/:id', animalController.patch);
