@@ -3,7 +3,7 @@ import { animalService } from '../services/animalService.js';
 export const animalController = {
     async getAll(req, res) {
         try {
-            const animais = await animalService.getAllAnimais()
+            const animais = await animalService.getAllAnimals()
             res.json(animais);
         } catch (error) {
             res.status(404).json({ error: error.message });
@@ -61,5 +61,4 @@ export const animalController = {
             res.status(status).json({ error: error.message });
         }
     }
-}
-
+};
